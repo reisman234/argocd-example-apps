@@ -14,13 +14,13 @@ service:
   port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  path: /
+  path: /helm-guestbook
   hosts:
-    - chart-example.local
+    - https://node-3.gaiax4ki.imla.hs-offenburg.de
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
